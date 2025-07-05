@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="assets/img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.5.0/remixicon.css">
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+
+    <title>Portfolio</title>
+</head>
+
+<body>
+    
+    <header class="header" id="header">
+        <nav class="nav_container">
+           
+            <a href="index.html" class="nav__logo">Paola Hislane</a>
+
+           
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                   
+                    <li class="nav__item">
+                        <a href="index.html" class="nav__link">Início</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="sobre.html" class="nav__link">Sobre</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="portfolio.html" class="nav__link">Portfolio</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="contato.html" class="button">Contato</a>
+                    </li>
+                </ul>
+
+             
+                <div class="nav__close" id="nav-close">
+                    <i class="ri-close-fill"></i>
+                </div>
+            </div>
+
+         
+            <div class="nav__actions">
+                <!-- Botão para alternar entre tema claro/escuro -->
+                <i class="ri-moon-line change-theme" id="theme-button"></i>
+
+                <!-- Botão para abrir o menu (em dispositivos móveis) -->
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class="ri-apps-2-line"></i>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Conteúdo principal da página -->
+    <main class="main">
+        <!-- Seção inicial (Home) -->
+        <section class="home section">
+            <div class="home__rectangle"></div> <!-- Elemento decorativo -->
+
+            <div class="home__container container grid">
+                <!-- Área do perfil com imagem -->
+                <div class="home__perfil perfil">
+                    <div class="perfil__content">
+                        <img src="assets/img/paolaperfil.jpeg" alt="image" class="perfil__img">
+                    </div>
+                </div>
+
+                <!-- Conteúdo principal da home -->
+                <div class="home__content grid">
+                    <div class="home__data grid">
+                        <h1 class="home__name">Paola Hislane</h1> <!-- Nome -->
+                        <h2 class="home__profession">Dev Fullstack & Visual Designer</h2> 
+
+                        <!-- Links para redes sociais -->
+                        <div class="home__social">
+                            <a href="https://github.com/paolahislane" target="_blank" class="home__social-link">
+                                <i class="ri-github-fill"></i>
+                            </a>
+                            <a href="https://www.linkedin.com/in/paola-hislane-paola-hislane-85b2b7373/" target="_blank" class="home__social-link">
+                                <i class="ri-linkedin-box-fill"></i>
+                            </a>
+                            <a href="https://github.com/" target="_blank" class="home__social-link">
+                                <i class="ri-dribbble-line"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Botão para download do currículo -->
+                    <a href="assets/pdf/" download="" class="home__button button">Baixar Curriculo</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção de serviços oferecidos -->
+        <section class="services section">
+            <h2 class="section__title">
+                Serviços <br>
+                E outros
+            </h2>
+
+            <div class="services__container container grid">
+                <!-- Cartão de serviço 1: Web Developer -->
+                <article class="services__card">
+                    <i class="ri-code-s-slash-line services__icon"></i>
+                    <h2 class="services__title">Web Developer</h2>
+                    <button class="services__button button">Saiba mais</button>
+
+                    <div class="services__modal">
+                        <div class="services__modal-content">
+                            <i class="ri-close-line services__modal-close"></i>
+                            <h2 class="services__modal-title">Web Developer</h2>
+                            <ul class="services__modal-list grid">
+                                <li class="services__modal-item">
+                                   Tecnologias modernas: HTML5, CSS3,<br> JavaScript (React, Vue),  Node.js,<br> Python.
+                                </li>
+                                <li class="services__modal-item">
+                                    Foco em resultados: Sites responsivos,<br> otimizados para SEO e escaláveis.
+                                </li>
+                                <li class="services__modal-item">
+                                   Abordagem prática: Resolução de <br>problemas com código limpo<br> e eficiente.
+                                </li>
+                                <li class="services__modal-item">
+                                    Resolução de problemas com alta<br> performance para Páginas Web.
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Cartão de serviço 2: Web Designer -->
+                <article class="services__card">
+                    <i class="ri-pen-nib-line services__icon"></i>
+                    <h2 class="services__title">Web Designer</h2>
+
+                    <button class="services__button button">Saiba mais</button>
+
+                    <div class="services__modal">
+                        <div class="services__modal-content">
+                            <i class="ri-close-line services__modal-close"></i>
+                            <h2 class="services__modal-title">Web Designer</h2>
+                            <ul class="services__modal-list grid">
+                                <li class="services__modal-item">
+                                  Criação de layouts modernos e<br> intuitivos
+                                </li>
+                                <li class="services__modal-item">
+                                   Design responsivo (mobile, <br>tablet, desktop)
+                                </li>
+                                <li class="services__modal-item">
+                                    Prototipagem e wireframes no <br>Figma
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Cartão de serviço 3: UI/UX -->
+                <article class="services__card">
+                    <i class="ri-layout-2-line services__icon"></i>
+                    <h2 class="services__title">Interfaces UI/UX</h2>
+
+                    <button class="services__button button">Saiba mais</button>
+
+                    <div class="services__modal">
+                        <div class="services__modal-content">
+                            <i class="ri-close-line services__modal-close"></i>
+                            <h2 class="services__modal-title">Interfaces UI/UX</h2>
+                            <ul class="services__modal-list grid">
+                                <li class="services__modal-item">
+                                    Cabeçalho intuitivo + CTA claro
+                                </li>
+                                <li class="services__modal-item">
+                                     Formulários simples e acessíveis
+                                </li>
+                                <li class="services__modal-item">
+                                    Cards informativos com hierarquia <br>visual
+                                </li>
+                                <li class="services__modal-item">
+                                    Rodapé organizado
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+<section class="testimonial section">
+    <h2 class="section__title">
+        Meus Projetos <br>
+        Trabalhos Recentes
+    </h2>
+    <div class="testimonial__container container">
+        <!-- Carrossel de projetos usando Swiper -->
+        <div class="testimonial__swiper swiper">
+            <div class="swiper-wrapper">
+                <!-- Projeto 1 -->
+                <article class="testimonial__card swiper-slide">
+                    <a href="https://gh2cca.netlify.app/" target="_blank" class="work__link">
+                        <img src="assets/img/work-1.jpg" alt="Projeto 1" class="testimonial__img">
+                        <i class="ri-arrow-right-circle-line testimonial__icon"></i>
+                    </a>
+                    <h2 class="testimonial__name">CORRESPONDENTE DA CAIXA</h2>
+                    
+                </article>
+
+                <!-- Projeto 2 -->
+                <article class="testimonial__card swiper-slide">
+                    <a href="https://ccasupera.netlify.app/" target="_blank" class="work__link">
+                        <img src="assets/img/work-2.png" alt="Projeto 2" class="testimonial__img">
+                        <i class="ri-arrow-right-circle-line testimonial__icon"></i>
+                    </a>
+                    <h2 class="testimonial__name">CORRESPONDENTE DA CAIXA</h2>
+                </article>
+
+                <!-- Projeto 3 -->
+                <article class="testimonial__card swiper-slide">
+                    <a href="https://relogiotds.netlify.app/" target="_blank" class="work__link">
+                        <img src="assets/img/work-3.png" alt="Projeto 3" class="testimonial__img">
+                        <i class="ri-arrow-right-circle-line testimonial__icon"></i>
+                    </a>
+                    <h2 class="testimonial__name">RELÓGIO</h2>
+                    
+                </article>
+
+                <!-- Projeto 4 -->
+                <article class="testimonial__card swiper-slide">
+                    <a href="https://calculadoraimcc2.netlify.app/" target="_blank" class="work__link">
+                        <img src="assets/img/work-4.jpg" alt="Projeto 4" class="testimonial__img">
+                        <i class="ri-arrow-right-circle-line testimonial__icon"></i>
+                    </a>
+                    <h2 class="testimonial__name">CALCULADORA</h2>
+                </article>
+                <!-- Projeto 5 -->
+                               <article class="testimonial__card swiper-slide">
+                    <a href="https://cardlanches.netlify.app//" target="_blank" class="work__link">
+                        <img src="assets/img/work-5.png" alt="Projeto 5" class="testimonial__img">
+                        <i class="ri-arrow-right-circle-line testimonial__icon"></i>
+                    </a>
+                    <h2 class="testimonial__name">CARDÁPIO LANCHE</h2>
+                </article>
+                <!-- Projeto 6 -->
+                <article class="testimonial__card swiper-slide">
+                    <a href="https://dindinmalu.netlify.app//" target="_blank" class="work__link">
+                        <img src="assets/img/work-6.jpg" alt="Projeto 6" class="testimonial__img">
+                        <i class="ri-arrow-right-circle-line testimonial__icon"></i>
+                    </a>
+                    <h2 class="testimonial__name">CARDÁPIO DINDIN</h2>
+                </article>
+
+                <!-- Projeto 7 -->
+                <article class="testimonial__card swiper-slide">
+                    <a href="https://jogoo.netlify.app/" target="_blank" class="work__link">
+                        <img src="assets/img/work-7.png" alt="Projeto 7" class="testimonial__img">
+                        <i class="ri-arrow-right-circle-line testimonial__icon"></i>
+                    </a>
+                    <h2 class="testimonial__name">JOGO</h2>
+                </article>
+            </div>
+        </div>
+
+        <!-- Paginação do carrossel -->
+        <div class="swiper-pagination"></div>
+    </div>
+</section>
+
+        <!-- Seção de contato -->
+        <section class="contact section">
+            <div class="contact__container container grid">
+                <h2 class="section__title">
+                    Vamos falar <br>
+                    Sobre o seu projeto?
+                </h2>
+                <a href="contato.html" class="contact__button button">Entre em Contato</a>
+            </div>
+        </section>
+    </main>
+
+    <!-- Rodapé da página -->
+    <footer class="footer">
+        <div class="footer__container container grid">
+            <div class="footer__content grid">
+                <a href="index.html" class="footer__logo">Paola Hislane</a>
+
+                <!-- Links do rodapé -->
+                <ul class="footer__links">
+                    <li>
+                        <a href="sobre.html" class="footer__link">Sobre</a>
+                    </li>
+                    <li>
+                        <a href="portfolio.html" class="footer__link">Portfolio</a>
+                    </li>
+                    <li>
+                        <a href="contato.html" class="footer__link">Contato</a>
+                    </li>
+                </ul>
+
+                <!-- Redes sociais no rodapé -->
+                <div class="footer__social">
+                    <a href="https://www.facebook.com/paola.hislane.5" target="_blank" class="footer__social-link">
+                        <i class="ri-facebook-circle-fill"></i>
+                    </a>
+                    <a href="https://www.instagram.com/paollahislane/" target="_blank" class="footer__social-link">
+                        <i class="ri-instagram-fill"></i>
+                    </a>
+                    <a href="https://www.twitter.com/" target="_blank" class="footer__social-link">
+                        <i class="ri-twitter-x-fill"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/paola-hislane-paola-hislane-85b2b7373/" target="_blank" class="footer__social-link">
+                        <i class="ri-linkedin-box-fill"></i>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Direitos autorais -->
+            <span class="footer__copy">
+                &#169; Todos os Direitos Reservados Paola Hislane
+            </span>
+        </div>
+    </footer>
+
+    <!-- Botão para voltar ao topo -->
+    <a href="#" class="scrollup" id="scroll-up">
+        <i class="ri-arrow-up-line"></i>
+    </a>
+
+    <!-- Scripts JavaScript -->
+    <script src="assets/js/main.js"></script> <!-- Script principal -->
+    <script src="assets/js/swiper-bundle.min.js"></script> <!-- Script do Swiper (carrossel) -->
+    <script src="assets/js/index.js"></script> <!-- Script específico da página -->
+</body>
+
+</html>
